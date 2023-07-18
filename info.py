@@ -86,14 +86,14 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
 PORT = environ.get("PORT", "8080")
-VERIFY = bool(environ.get('VERIFY', 'False'))
+VERIFY = bool(environ.get('VERIFY', 'false'))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'b2da06188bd355e103d16ab1b56db314709740df')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001858701768').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "7")
-MAX_BTN = is_enabled((environ.get('MAX_BTN', "False")), False)
+MAX_BTN = is_enabled((environ.get('MAX_BTN', "5")), False)
 S_GROUP = environ.get('S_GROUP',"https://t.me/+TokhcdxpetNlZjA1")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/hd_movies_hub01")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+nF7KliSj3RFkMzY1')
